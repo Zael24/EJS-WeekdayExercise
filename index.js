@@ -8,11 +8,11 @@ let dayOfWeek = d.getDay();
 
 //dayz = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 function getDay(dayz) {
-    return dayz === '0' || dayz === 6 ? 'weekend' : 'weekday';
+    return dayz === '0' || dayz === 6 ? 'the weekend' : 'a weekday';
 }
 
 function getActionType(action) {
-    return action === 'weekend' ? 'have fun' : 'work hard';
+    return action === 'the weekend' ? 'have fun' : 'work hard';
 }
 
 app.get('/', (req, res) => {
